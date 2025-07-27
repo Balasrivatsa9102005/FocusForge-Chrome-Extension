@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #1f1f1f;
+      color: #f5f5f5;
+      padding: 20px;
+      width: 300px;
+    }
+
+    h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      text-align: center;
+      color: #00d8ff;
+    }
+
+    #status {
+      font-weight: bold;
+      margin-top: 15px;
+      text-align: center;
+      color: #ffcb6b;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      font-size: 14px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 6px;
+      background: #2d2d2d;
+      color: #ffffff;
+    }
+
+    button {
+      background: #00c853;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      padding: 10px;
+      font-size: 14px;
+      width: 100%;
+      cursor: pointer;
+      margin-top: 10px;
+      transition: background 0.2s ease-in-out;
+    }
+
+    button:hover {
+      background: #00e676;
+    }
+
+    #toggleFocus {
+      background: #2962ff;
+      margin-top: 15px;
+    }
+
+    #toggleFocus.active {
+      background: #d50000;
+    }
+
+    #toggleFocus:hover {
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+  <h3>FocusForge</h3>
+
+  <input type="text" id="goalInput" placeholder="What’s your focus goal?">
+  <button id="setGoal">Set Focus Goal</button>
+  
+  <button id="toggleFocus">Enable Focus Mode</button>
+
+  <div id="status"></div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
